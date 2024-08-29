@@ -1,1 +1,0 @@
-# Firma-Hukum-Rantai-Khatulistiwa

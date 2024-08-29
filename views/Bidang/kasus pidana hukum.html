@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Categories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/bItem.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="../Landing Page/landingpage.html">
+                    <img src="../../public/images/LOGORK.png" alt="Logo Rantai Khatulistiwa">
+                </a>
+                </div>
+                <nav>
+                <ul>
+                    <li><a href="../Landing Page/landingpage.html">Beranda</a></li>
+                    <li><a href="../Bidang/bidang.html">Bidang</a></li>
+                    <li><a href="../Legalitas/KumpulanProfil.html">Legalitas</a></li>
+                    <li><a href="../administrator/Administrator.html">Administrator</a></li>
+                    <li><a href="../galeri/Galeri.html">Galeri</a></li>
+                    <li><a href="../properti/landingproperty.html">Properti</a></li>
+                    <li><a href="../Hubungi kami/HubungiKami.html">Hubungi Kami</a></li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Pidana Umum</h1>
+            </div>
+        </section>
+        <div class="container2">
+            <div class="back-button-wrapper">
+                <a href="../Bidang/bidang.html" class="back-button"><img src="../../public/images/back1.png" alt="Email" class="back-button"></a>
+                </a>
+            </div>
+            <section class="content">
+                <p>Firma Hukum Rantai Khatulistiwa memberikan layanan hukum dalam kasus pidana umum, menangani tindak pidana seperti pencurian, penipuan, dan kekerasan. Kami berkomitmen untuk memberikan pembelaan yang optimal, baik bagi terdakwa maupun korban, dengan pendekatan yang disesuaikan dengan kebutuhan klien. Dengan pengalaman luas dalam litigasi pidana, kami memastikan setiap tahap proses hukum ditangani dengan profesionalisme.</p>
+                <p>Kami juga menekankan prinsip keadilan dan hak asasi manusia, bekerja sama dengan lembaga terkait untuk melindungi hak klien. Selain itu, kami menyediakan konsultasi hukum preventif untuk membantu klien menghindari masalah hukum di masa depan, dengan pendekatan yang komprehensif dan solutif.</p>
+                
+            </section>
+        </div>
+        <footer>
+            <div class="footer-section">
+                <img src="../../public/images/LOGO 2.png" alt="Logo 1" class="logo">
+            </div>
+            <div class="footer-section alamat"> <!-- Added class "alamat" -->
+                <h2>Alamat</h2>
+                <p>Rantai Khatulistiwa Jl. Raden Saleh Raya No.9-B, RT.2/RW.3, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10430</p>
+               
+            </div>
+            <div class="footer-section tautan"> <!-- Added class "tautan" -->
+                <h2>Tautan</h2>
+                <p><a href="../Landing Page/landingpage.html">Beranda</a></p>
+                <p><a href="../tentang kami/Tentang kami.html">Tentang Kami</a></p>
+                <p><a href="../Jasa Hukum Kami(layanan kami)/Draf dan Analisa Perjanjian.html">Pelayanan</a></p>
+                <p><a href="../Hubungi kami/HubungiKami.html">Hubungi Kami</a></p>
+            </div>
+            <div class="footer-section hubungi-kami"> <!-- Added class "hubungi-kami" -->
+                <h2>Hubungi Kami</h2>
+                <p><img src="../../public/images/email.png" alt="Email" class="hubungi-kami-icon">Email: <a href="mailto:rantaikhatulistiwa@gmail.com">rantaikhatulistiwa@gmail.com</a></p>
+                 <!-- Underline under email -->
+                <p>
+            <img src="../../public/images/telephone-handle-silhouette.png" alt="Phone" class="hubungi-kami-icon">
+            Phone: <a href="https://wa.me/6281218028526" target="_blank" style="text-decoration: none; color: inherit;">(+62)812-1802-8526</a>
+        </p>
+                <div class="footer-underline-short"></div>
+                <h2>Media Sosial</h2>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=61563330248589" target="_blank">
+                        <img src="../../public/images/facebook.png" alt="facebook" class="social-icon">
+                    </a>        
+                    <a href="https://www.instagram.com/lawfirm.rk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <img src="../../public/images/instagram.png" alt="instagram" class="social-icon">
+                    </a>  
+                    <a href="https://www.linkedin.com/in/firma-rantai-khatulistiwa-5a58892a7" target="_blank">
+                        <img src="../../public/images/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-underline"></div> <!-- Underline across the entire footer -->
+            <div class="logos">
+                <img src="../../public/images/Peradi.png" alt="Logo 3" class="peradi"> <!-- Added class "peradi" -->
+                <img src="../../public/images/LOGO-DPP-FERARI-FIX-removebg-preview.png" alt="Logo 4">
+                <img src="../../public/images/Logo-KAI-PNG-White.png" alt="Logo 5">
+            </div>
+         </footer>
+    </div>
+    <script>
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+    </script>
+</body>
+</html>

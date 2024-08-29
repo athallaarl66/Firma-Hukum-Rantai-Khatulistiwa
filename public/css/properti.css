@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;    line-height: 1.6;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header * {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: 'montserrat', sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 70px; 
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 60px; 
+}
+
+nav ul li:first-child {
+    margin-left: 0; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*main styling*/
+  .produk {
+      max-width: 1200px;
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    
+  }
+
+  .property-card {
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      width: calc(33.333% - 40px);
+      box-sizing: border-box;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      margin-top: 120px;
+  }
+  .property-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .property-card-content {
+      padding: 15px;
+  }
+
+  .property-card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+  }
+
+  .property-card-location {
+      font-size: 14px;
+      color: #555;
+  }
+
+  .property-card-details {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin: 10px 0;
+  }
+
+  .property-card-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d9534f;
+  }
+
+  .property-card:hover {
+      transform: scale(1.05);
+  }
+
+  .property-card2 {
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      width: calc(33.333% - 40px);
+      box-sizing: border-box;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      margin-top: 20px;
+  }
+  .property-card2 img {
+      width: 100%;
+      height: auto;
+  }
+
+  .property-card2-content {
+      padding: 15px;
+  }
+
+  .property-card2-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+  }
+
+  .property-card2-location {
+      font-size: 14px;
+      color: #555;
+  }
+
+  .property-card2-details {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin: 10px 0;
+  }
+
+  .property-card2-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d9534f;
+  }
+
+  .property-card2:hover {
+      transform: scale(1.05);
+  }
+
+  .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #f39c12;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 5px #999;
+      margin-bottom: 180px;
+  }
+
+  .button:hover {
+      background-color: #f39c12;
+  }
+
+  .button:active {
+      background-color: #f39c12;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+  }
+
+/*footer*/
+footer {
+    background: #F0EDE0;
+    padding: 5px 20px; /* Adjust padding to make background smaller */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.footer-section {
+    width: 23%;
+    padding: 0px; /* Reduce padding */
+    margin-bottom: 8px; /* Reduce margin-bottom */
+    position: relative;
+}
+
+.footer-section.hubungi-kami {
+    margin-right: 10px; /* Mengurangi margin di antara mereka */
+}
+
+.footer-section h2 {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 8px; /* Reduce margin-bottom */
+    position: relative;
+}
+
+.footer-section p, .footer-section a {
+    /* font-weight: 500; */
+    font-size: 14px;
+    line-height: 20px; /* Reduce line-height */
+    color: #000000;
+    margin: 0 0 8px 0; /* Reduce margin */
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px; /* Reduce gap */
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
+.hubungi-kami-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px; /* Reduce margin-right */
+}
+
+.footer-underline {
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin: 10px 0; /* Reduce margin */
+}
+
+.footer-underline-short {
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin: 10px 0; /* Reduce margin */
+}
+
+.logos {
+    display: flex;
+    gap: 10px; /* Reduce gap */
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.logos img {
+    width: 40px; /* Default size for other logos */
+    height: auto;
+    display: inline-block;
+}
+
+.logos img.peradi {
+    width: 80px; /* Larger size for PERADI logo */
+}
+
+.footer-section img.logo {
+    display: block;
+    margin-top: 20px;
+    width: 180px; /* Adjust size as needed */
+}

@@ -1,0 +1,897 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent; 
+    transition: background-color 0.50s ease; 
+    font-family: 'montserrat', sans-serif;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.sticky.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 70px; 
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 60px; 
+}
+
+nav ul li:first-child {
+    margin-left: 0; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* for image below haeder */
+#hero {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    position: relative;
+    /* width: 1240px; */
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease;
+    background-size: cover;
+    width: auto;
+
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex: 1 0 100%;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 1;
+}
+
+#hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: white;
+    text-align: left;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-family: 'montserrat', sans-serif;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 3;
+}
+
+
+.nav-btnhero{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btnhero.active,
+.nav-btnhero:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Additional styles for other sections */
+#profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* allah */
+#Allah {
+    
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+   font-family: 'italic', sans-serif;
+}
+
+#Allah p {
+    font-size: 0.9em; /* Adjust font size as needed */
+    position: relative;
+    
+}
+
+#Allah p::after {
+    content: '';
+    display: block;
+    width: 200px;
+    border-top: 2px solid #333;
+    margin: 10px auto 0; /* Adjust margins to create space */
+}
+
+/* for padding and space between each */
+#company-profile {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#company-profile p {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px; 
+}
+
+#consultation-services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+}
+
+#legal-articles {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#company-profile h2 {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+/* box konsultasi */
+
+#consultation-services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: 'montserrat', sans-serif;
+}
+
+#consultation-services h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.consultation-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.option {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.164);
+    padding: 30px 20px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure items are spaced evenly */
+    height: 380px
+}
+
+/* .option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+} */
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.option h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.option p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.option ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.option ul li {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.option ul li::before {
+    content: "✔";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.option button {
+    background-color: #d4a259;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Align button at the bottom */
+}
+
+.option button:hover {
+    background-color: #b48947;
+}
+
+
+/* for background */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 20px; Add space between items */
+    margin-top: 30px;
+}
+
+.service {
+    width: 150px; /* Set a fixed width for consistency */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.service a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service img {
+    width: 40px; /* Ensure images have the same width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.service:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Add shadow on hover */
+}
+
+.additional-service-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #d4a259;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.additional-service-button:hover {
+    background-color: #b48947;
+}
+
+#legal-articles {
+    background-color: #f9f9f9; /* Matches the consultation services section */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#legal-articles h2 {
+    margin-bottom: 20px;
+}
+
+#legal-articles .articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#legal-articles .article {
+    background: #ffffff; /* Background color white for clear border */
+    margin: 10px;
+    padding: 0; /* Remove padding to make the image full cover */
+    border-radius: 8px;
+    width: 200px; /* Adjust width as needed */
+    height: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Border for clear separation */
+    overflow: hidden; /* Ensure content stays within border */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    text-decoration: none;
+
+}
+
+#legal-articles .article:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    text-decoration: none;
+
+}
+
+#legal-articles .article img {
+    width: 100%;
+    height: auto; /* Ensure the image covers the full width and maintains aspect ratio */
+    display: block; /* Remove any gap below the image */
+}
+
+#legal-articles .article-content {
+    padding: 20px; /* Add padding for the text content */
+}
+
+#legal-articles .article h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#legal-articles .article p {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    text-decoration: none;
+
+}
+
+#legal-articles .article a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+#legal-articles .article a:hover {
+    color: #000000;
+    text-decoration: none;
+
+}
+/* SECTION KOMEN */
+
+#comments {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    font-family: 'montserrat', sans-serif;
+    position: relative;
+}
+
+#comments h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.comments-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.comments-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.comment.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.comment-header .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.comment-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.reply {
+    margin-top: 15px;
+    padding-left: 50px;
+    border-left: 3px solid #C18A42;
+    margin-left: 20px;
+}
+
+.reply .comment-header {
+    margin-bottom: 10px;
+}
+
+.add-comment {
+    margin-top: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-comment h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.add-comment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-comment form textarea {
+    width: 100%; /* Lebar sesuai dengan lebar form */
+    max-width: 100%; /* Maksimal lebar tetap mengikuti form */
+    height: 100px; /* Tinggi tetap */
+    resize: none; /* Menonaktifkan opsi resize */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.add-comment form button {
+    background-color: #C18A42;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 30px; /* Menambahkan ruang antara textarea dan tombol */
+}
+
+.add-comment form button:hover {
+    background-color: #a76f35;
+}
+
+/* Navigation Button Styles */
+.nav-btn {
+    color: #ffffff00;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn.prev {
+    left: -10px;
+    background-color: rgba(250, 128, 114, 0);
+
+}
+
+.nav-btn.next {
+    right: -10px;
+    background-color: rgba(250, 128, 114, 0);
+}
+
+.nav-btn:hover {
+    background-color: #a7703500;
+}
+
+.arrow-left, .arrow-right {
+    font-size: 26px;
+    color: #000000;
+
+}
+
+.comment-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.nav-btn {
+    pointer-events: all;
+}
+
+
+/* KOMEN */
+
+footer {
+    background: #F0EDE0;
+    padding: 5px 20px; /* Adjust padding to make background smaller */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    font-family: 'montserrat', sans-serif;
+    width: 100%;
+}
+
+.footer-section {
+    width: 23%;
+    padding: 0px; /* Reduce padding */
+    margin-bottom: 8px; /* Reduce margin-bottom */
+    position: relative;
+}
+
+.footer-section.hubungi-kami {
+    margin-right: 10px; /* Mengurangi margin di antara mereka */
+}
+
+.footer-section h2 {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 8px; /* Reduce margin-bottom */
+    position: relative;
+}
+
+.footer-section p, .footer-section a {
+    /* font-weight: 500; */
+    font-size: 14px;
+    line-height: 20px; /* Reduce line-height */
+    color: #000000;
+    margin: 0 0 8px 0; /* Reduce margin */
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px; /* Reduce gap */
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
+.hubungi-kami-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px; /* Reduce margin-right */
+}
+
+.footer-underline {
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin: 10px 0; /* Reduce margin */
+}
+
+.footer-underline-short {
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin: 10px 0; /* Reduce margin */
+}
+
+.logos {
+    display: flex;
+    gap: 10px; /* Reduce gap */
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.logos img {
+    width: 40px; /* Default size for other logos */
+    height: auto;
+    display: inline-block;
+}
+
+.logos img.peradi {
+    width: 80px; /* Larger size for PERADI logo */
+}
+
+.footer-section img.logo {
+    display: block;
+    margin-top: 20px;
+    width: 180px; /* Adjust size as needed */
+}
+
+/* Pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+/* Pop-up content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Styling for the popup button */
+.popup-content button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.popup-content button:hover {
+    opacity: 0.8;
+}
+
+.popup-content button:hover {
+    opacity: 0.8;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-list, .consultation-options, .articles {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+}
+
+/* New styles for the added section */
+#about-us .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0 10px; /* Adjust padding to ensure spacing around content */
+}
+
+
+
+#about-us .about-images, #about-us .achievement-image {
+    width: 25%; /* Adjusted width for closer alignment */
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+#about-us .about-text, #about-us .achievement-text {
+    width: 50%; /* Adjusted width for closer alignment */
+    margin-left: 90px;
+    margin-right: 90px;
+    font-family: 'montserrat', sans-serif;
+}
+
+#about-us h2 {
+    color: #333;
+    font-family: 'montserrat', sans-serif;
+}
+
+#about-us p {
+    color: #666;
+    line-height: 1.6;
+    font-family: 'montserrat', sans-serif;
+}
+
+#about-us .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #333;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#about-us .btn:hover {
+    background-color: #a76f35;
+    color: #fff;
+    border: 1px solid white;
+
+}

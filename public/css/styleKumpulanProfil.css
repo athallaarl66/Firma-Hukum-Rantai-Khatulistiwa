@@ -1,0 +1,446 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'montserrat', sans-serif;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: 'montserrat', sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 60px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* section */
+
+#section {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 25px;
+
+    
+}
+.main-title{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'montserrat', sans-serif;   
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.titleKiri{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'montserrat', sans-serif;   
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+/* Main content styles */
+
+.main{
+    margin-top: auto;
+    width: auto;
+    height: auto;
+    margin-bottom: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+
+}
+
+/* Kontainer untuk memusatkan title */
+.main-title-container {
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memastikan teks berada di tengah secara vertikal */
+    margin-top: 100px; /* Jarak dari elemen di atasnya */
+    margin-bottom: 5px; /* Jarak dari card profile */
+    width: 100%;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+}
+
+
+/* Mengatur jarak antara box profil */
+.profile-card {
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px; /* Mengatur jarak antar box profil */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px;
+}
+
+.profile-card h2 {
+    font-size: 12px;
+    font-family: 'montserrat', sans-serif;    font-weight: 900;
+    color: #000000a4;
+}
+
+/* POP UP PROFILE */
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card h3 {
+    font-size: 16px;
+    font-family: 'montserrat', sans-serif;    font-weight: 900;
+    color: #000000;
+    text-align: left;
+}
+
+.profile-card p {
+    font-size: 12px;
+    font-family: 'montserrat', sans-serif;    font-weight: 900;
+    color: #00000057;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    object-fit: cover;
+
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'montserrat', sans-serif;}
+p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+    font-family: 'montserrat', sans-serif;}
+
+/* button {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 2px;
+}
+
+.button{
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 2px;
+
+
+} */
+
+.profile-1 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* padding: 20px; */
+    width: auto;
+    height: auto;
+    flex-direction: column 2px; /* Change to column layout */
+    margin-top: 10px;
+    /* margin-bottom: 120px; */
+}
+
+.profile-2{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* padding: 20px; */
+    width: auto;
+    height: auto;
+    flex-direction: column 2px; /* Change to column layout */
+    margin-top: 10px;
+
+}
+
+.profile-3{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* padding: 20px; */
+    width: auto;
+    height: auto;
+    flex-direction: column 2px; /* Change to column layout */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.profile-4{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* padding: 20px; */
+    width: auto;
+    height: auto;
+    flex-direction: column 2px; /* Change to column layout */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.profile-5{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* padding: 20px; */
+    width: auto;
+    height: auto;
+    flex-direction: column 2px; /* Change to column layout */
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.kotak-opsi{
+    justify-content: center;
+    justify-items: center;
+    margin-right: 100px;
+    width: 300px;
+    font-size: 12px;
+    height: 300px;
+    font-style: bold;
+    font-family: 'montserrat', sans-serif;}
+
+/* Style for the profile text */
+.ProfilTeks {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    font-family: 'montserrat', sans-serif;    
+    display: flex;
+    align-items: center;
+    /* transition: color 0.3s ease; */
+}
+
+/* .ProfilTeks:hover {
+    color: sienna; 
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+} */
+
+.ProfilTeks i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Mengatur jarak antara tulisan dan box profil */
+.profile-container {
+    height: auto;
+    width: 400px;
+    text-align: left;
+    margin-right: 40px; /* Mengatur jarak antara tulisan dan box profil */
+    margin-top: 80px;
+    margin-bottom: auto;
+    padding-right: 20px; /* Tambahan padding jika diperlukan */
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.profile-container ul {
+    list-style-type: none; /* Change to 'none' if you don't want bullet points */
+    padding-left: 20px; /* Adjust padding as needed */
+}
+
+.profile-container li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.profile-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+    display: inline-block; /* Make the link block-level */
+  }
+
+
+/* Footer styles */
+footer {
+    background: #F0EDE0;
+    padding: 5px 20px; /* Adjust padding to make background smaller */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.footer-section {
+    width: 23%;
+    padding: 0px; /* Reduce padding */
+    margin-bottom: 8px; /* Reduce margin-bottom */
+    position: relative;
+}
+
+.footer-section.hubungi-kami {
+    margin-right: 10px; /* Mengurangi margin di antara mereka */
+}
+
+.footer-section h2 {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 8px; /* Reduce margin-bottom */
+    position: relative;
+}
+
+.footer-section p, .footer-section a {
+    /* font-weight: 500; */
+    font-size: 14px;
+    line-height: 20px; /* Reduce line-height */
+    color: #000000;
+    margin: 0 0 8px 0; /* Reduce margin */
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px; /* Reduce gap */
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
+.hubungi-kami-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px; /* Reduce margin-right */
+}
+
+.footer-underline {
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin: 10px 0; /* Reduce margin */
+}
+
+.footer-underline-short {
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin: 10px 0; /* Reduce margin */
+}
+
+.logos {
+    display: flex;
+    gap: 10px; /* Reduce gap */
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.logos img {
+    width: 40px; /* Default size for other logos */
+    height: auto;
+    display: inline-block;
+}
+
+.logos img.peradi {
+    width: 80px; /* Larger size for PERADI logo */
+}
+
+.footer-section img.logo {
+    display: block;
+    margin-top: 20px;
+    width: 180px; /* Adjust size as needed */
+}

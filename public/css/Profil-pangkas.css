@@ -1,0 +1,572 @@
+/* header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Tambahkan ini untuk menghilangkan scrollbar horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: 'montserrat', sans-serif;
+    
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+  }
+  
+  header .logo img {
+    height: 40px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 60px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+/* Main styling */
+  
+  
+main .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  
+  
+  main {
+    width: 862px;
+    height: 800px;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .profile-header {
+    display: flex;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    
+  }
+  
+  .back-button {
+    text-decoration: none;
+    font-size: large;
+    margin-right: 10px;
+    color: #000;
+    border: none;
+    background: none;
+    margin-right: 230px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .back-button:hover {
+    transform: translateY(  2px);
+    transform: translateX(2px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  }
+  
+  /* new */
+  .profile-header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: auto;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .profile-header p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .profile-section {
+    margin-bottom: 30px;
+  }
+  
+  .profile-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .profile-section p {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  .profile-content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #00000065;
+  }
+  
+  .profile-content p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .profile-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-section ul li {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
+  .next-button {
+    background-color: #C18A42;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  /* new */
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 85px;
+    margin-bottom: 34px;
+    gap: 20px;
+    
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 165px;
+    height: 155px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 21px;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .profile-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .textBawahProfil {
+    margin-left: 78px;
+    padding-bottom: 10px;
+  }
+  
+  .textBawahProfil  p {
+    margin: auto;
+    font-weight: bold;
+  }
+  
+  
+  .textBawahProfil  a {
+    margin: auto;
+    margin-left: 39px;
+  }
+  .iconBawahProfil {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .profile-content {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 75px;
+  
+  }
+  
+  .profile-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .profile-content p {
+    font-size: 14px;
+    margin: 5px 0;
+    margin-bottom: 5px;
+    width: 650px;
+    height: auto;
+  }
+  
+  .iconPendidikan {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-bottom: -6px;
+    margin-top: -10px;
+  }
+  
+  .teksIsi {
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  
+  /* .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 65px;
+  } */
+  
+  .next-button {
+    background-color: #C18A42;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  
+  
+  /* modal */
+  
+  
+  .modal {
+    display: none;
+    position: flex;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    /* width: 100%;
+    height: 100%; */
+    overflow: auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #consultation-modal.modal.main {
+    max-width: 100%; /* Pastikan modal tidak melebihi lebar layar */
+    width: 881px;
+    height: 600px;
+    margin: auto; /* Pastikan modal berada di tengah secara horizontal */
+    padding: none;
+    
+  }
+  
+  .modal-content {
+    /* background-color: #fff; */
+    margin: 15% auto;
+    padding: 10px;
+    /* border: 1px solid #888; */
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+  
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 75px;
+  }
+  
+  .modal-content h3 {
+    font-weight: bold;
+    border-bottom: 1px solid #00000065;
+    width: 786.98px;
+    height: 35.02px;
+  }
+  
+  
+  
+  .close {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    margin-top: -10px;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .consultation-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .consultation-option img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  .consultation-option input{
+    width: 15px;
+    height: 15px;
+  }
+  
+  .option-info {
+    flex: 1;
+  }
+  
+  .option-info p{
+    width: 483px;
+    height: 80px;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .ok-button {
+    background-color: #C18A42;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 140px;
+  
+  }
+  
+  
+  
+  /* modal */
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer {
+  background: #F0EDE0;
+  padding: 5px 20px; /* Adjust padding to make background smaller */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+
+.footer-section {
+  width: 23%;
+  padding: 0px; /* Reduce padding */
+  margin-bottom: 8px; /* Reduce margin-bottom */
+  position: relative;
+}
+
+.footer-section.hubungi-kami {
+  margin-right: 10px; /* Mengurangi margin di antara mereka */
+}
+
+.footer-section h2 {
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px; /* Reduce margin-bottom */
+  position: relative;
+}
+
+.footer-section p, .footer-section a {
+  /* font-weight: 500; */
+  font-size: 14px;
+  line-height: 20px; /* Reduce line-height */
+  color: #000000;
+  margin: 0 0 8px 0; /* Reduce margin */
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .social-media {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px; /* Reduce gap */
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.hubungi-kami-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px; /* Reduce margin-right */
+}
+
+.footer-underline {
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  margin: 10px 0; /* Reduce margin */
+}
+
+.footer-underline-short {
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  margin: 10px 0; /* Reduce margin */
+}
+
+.logos {
+  display: flex;
+  gap: 10px; /* Reduce gap */
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+
+.logos img {
+  width: 40px; /* Default size for other logos */
+  height: auto;
+  display: inline-block;
+}
+
+.logos img.peradi {
+  width: 80px; /* Larger size for PERADI logo */
+}
+
+.footer-section img.logo {
+  display: block;
+  margin-top: 20px;
+  width: 180px; /* Adjust size as needed */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content {
+        font-size: 28px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 0;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+}
